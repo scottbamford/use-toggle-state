@@ -1,6 +1,6 @@
 {
   "name": "use-toggle-state",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A useState like hook for boolean values that returns the state, and a ToggleStateAction instead of a SetStateAction that all the setState callback to be called without passing any arguments to simply toggle the boolean value.",
   "main": "dist/lib/commonjs/index.js",
   "module": "dist/lib/esm/index.js",
@@ -34,8 +34,10 @@
     "build": "tsc && tsc -m esnext --outDir ./dist/lib/esm"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "tslib": ">=1.9.3"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
